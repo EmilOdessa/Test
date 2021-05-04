@@ -1,0 +1,5 @@
+insert into Products(ID, Name, Price) values (1, 'Вино', 114.45);
+insert into Products(ID, Name, Price) values (2, 'Колбаса', 537.32);
+insert into Products(ID, Name, Price) values (3, 'Рыба', 232.70);
+insert into Products(ID, Name, Price) values (4, 'Хлопья', 77.58);
+insert into Products(ID, Name, Price) values (5, 'Мыло', 114.77);

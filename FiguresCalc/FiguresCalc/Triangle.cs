@@ -55,6 +55,7 @@ namespace FiguresCalc
 
         public override double Area(double a, double b, double c)
         {
+            IsRightTriangle(a, b, c);
             double p = (a + b + c) / 2;//полупериметр
             return Math.Sqrt(p * (p - a) * (p - b) * (p - c));
         }

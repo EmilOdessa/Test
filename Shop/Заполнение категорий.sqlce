@@ -1,0 +1,4 @@
+
+insert into Categories(ID, Name) values (1, 'Алкоголь');
+insert into Categories(ID, Name) values (2, 'Гастроном');
+insert into Categories(ID, Name) values (3, 'Бакалея');

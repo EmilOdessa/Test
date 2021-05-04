@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,7 +13,7 @@ namespace FiguresCalc
             get { return width; }
             set
             {
-                if (value <= 0) { throw new Exception("Ð”Ð»Ð¸Ð½Ð° Ð´Ð¾Ð»Ð¶Ð½Ð° Ð±Ñ‹Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð½ÑƒÐ»Ñ!"); }
+                if (value <= 0) { throw new Exception("Äëèíà äîëæíà áûòü áîëüøå íóëÿ!"); }
                 else { width = value; }
             }
         }
@@ -23,7 +23,7 @@ namespace FiguresCalc
             get { return height; }
             set
             {
-                if (value <= 0) { throw new Exception("Ð¨Ð¸Ñ€Ð¸Ð½Ð° Ð´Ð¾Ð»Ð¶Ð½Ð° Ð±Ñ‹Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð½ÑƒÐ»Ñ!"); }
+                if (value <= 0) { throw new Exception("Øèðèíà äîëæíà áûòü áîëüøå íóëÿ!"); }
                 else { height = value; }
             }
         }
@@ -43,6 +43,7 @@ namespace FiguresCalc
 
         public override double Area(double width, double height)
         {
+IsSquare(width, height);
             return width * height;
         }
 
@@ -50,13 +51,13 @@ namespace FiguresCalc
         { 
             if( width == height)
             {
-                Name = "ÐšÐ²Ð°Ð´Ñ€Ð°Ñ‚";
+                Name = "Êâàäðàò";
                 return true;
             }
 
             else
             {
-                Name = "ÐŸÑ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸Ðº";
+                Name = "Ïðÿìîóãîëüíèê";
                 return false;
             }
         }

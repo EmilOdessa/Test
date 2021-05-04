@@ -1,0 +1,9 @@
+ALTER TABLE Product_Category
+ADD CONSTRAINT FK_Products
+FOREIGN KEY (Id_Product) REFERENCES Products(ID);
+
+ALTER TABLE Product_Category
+ADD CONSTRAINT FK_Categories
+FOREIGN KEY (Id_Category) REFERENCES Categories(ID);
+
+

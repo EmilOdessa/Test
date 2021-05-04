@@ -4,6 +4,9 @@ using System.Text;
 
 namespace FiguresCalc
 {
+    //Найти площадь фигуры не зная типа. Задача решена путем перегрузки методов. Если я правильно понял Вас)
+    //Именно поэтому класс НЕ абстрактный 
+
     public class Shape2D
     {
         protected string name;
@@ -21,17 +24,18 @@ namespace FiguresCalc
 
         public virtual double Area(double radius) //Круг
         {
-            Name = "Круг";
             return new Circle(Name).Area(radius); 
         }
         public virtual double Area(double a, double b) //Квадрат или прямоугольник
         {
-            Name = "Прямоугольник";
+            if(a == b) { Name = "Квадрат"; }
+            else { Name = "Прямоугольник"; }
             return new Rectangle(Name).Area(a, b);
         }
         public virtual double Area(double a, double b, double c) //треугольник
         {
-            Name = "Треугольник";
+            if((a * a + b * b == c * c) || (a * a + c * c == b * b) || (c * c + b * b == a * a)) { Name = "Прямоугольный треугольник"; }
+            else { Name = "Треугольник"; }
             return new Triangle(Name).Area(a, b, c);
         }
 

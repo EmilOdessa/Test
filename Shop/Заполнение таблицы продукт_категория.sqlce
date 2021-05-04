@@ -1,0 +1,6 @@
+
+insert into Product_Category(ID, Id_Product, Id_Category) values (1, 1, 1);
+insert into Product_Category(ID, Id_Product, Id_Category) values (2, 2, 2);
+insert into Product_Category(ID, Id_Product, Id_Category) values (3, 3, 2);
+insert into Product_Category(ID, Id_Product, Id_Category) values (4, 4, 3);
+insert into Product_Category(ID, Id_Product, Id_Category) values (5, 5, null);

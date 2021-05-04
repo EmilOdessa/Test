@@ -1,0 +1,7 @@
+
+select  Products.Name as Наименование, Products.Price as Цена, Categories.Name as Отдел
+
+from Products left join Product_Category on Products.ID = Product_Category.Id_Product left join
+                     Categories on Product_Category.Id_Category = Categories.ID
+
+                     

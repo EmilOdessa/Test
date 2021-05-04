@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -15,7 +15,7 @@ namespace FiguresCalc
             get { return radius; }
             set
             {
-                if(value <= 0) { throw new Exception("Ð Ð°Ð´Ð¸ÑƒÑ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð½ÑƒÐ»Ñ!"); }
+                if(value <= 0) { throw new Exception("Ðàäèóñ äîëæåí áûòü áîëüøå íóëÿ!"); }
                 else { radius = value; }
             }
         }
