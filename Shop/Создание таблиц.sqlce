@@ -1,0 +1,19 @@
+create table Products
+(
+      ID  int primary key identity,
+      Name nvarchar(100) not null,
+      Price float not null
+);
+
+create table Categories
+(
+      ID int primary key identity,
+      Name nvarchar(100) not null
+);
+
+create table Product_Category
+(
+      ID  int primary key identity,
+      Id_Product int not null,
+      Id_Category int
+);
